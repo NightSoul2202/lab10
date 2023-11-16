@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab9</title>
+    <script src="script.js" defer></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="MainDiv">
+        <h1 id="MainH">Казіно імені Романа</h1>
+        <div id="ContainDiv">
+            <div class="smallDiv">
+                <div class="Name" id="UserName">User</div>
+                <div id="CountOfAttempt">1</div>
+                <button id="ButtonGen"type="button">Крути барабан!</button>
+                <div id="CardBox">
+                    <div id="box1" class="styleForBox smallImg"><img src="image1.png" alt="Image 1"></div>
+                    <div id="box2" class="styleForBox smallImg"><img src="image2.png" alt="Image 2"></div>
+                    <div id="box3" class="styleForBox smallImg"><img src="image3.png" alt="Image 3"></div>
+                    <div id="box4" class="styleForBox smallImg"><img src="image4.png" alt="Image 1"></div>
+                    <div id="box5" class="styleForBox smallImg"><img src="image5.png" alt="Image 2"></div>
+                    <div id="box6" class="styleForBox smallImg"><img src="image2.png" alt="Image 3"></div>
+                    <div id="box7" class="styleForBox smallImg"><img src="image3.png" alt="Image 1"></div>
+                    <div id="box8" class="styleForBox smallImg"><img src="image4.png" alt="Image 2"></div>
+                    <div id="box9" class="styleForBox smallImg"><img src="image5.png" alt="Image 3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Modal">
+        <div class="modalWindow">
+            <label for="NickName">Введіть свій нікнейм:</label>
+            <input id="InputNick" autofocus maxlength="15" type="text" required>
+            <button id="ButtonOk" type="button">OK</button>   
+        </div>
+        <div class="modalBackground"></div>
+    </div>
+    <div id="WinnerWindow" style="display: none;">
+        <div class="modalWindow">
+            <label id="LabelWinner" for="NickName"></label>
+            <button id="ButtonRestart" type="button" style="width: 100px;">Переграти</button>   
+        </div>
+        <div class="modalBackground"></div>
+    </div>    
+</body>
+</html>
